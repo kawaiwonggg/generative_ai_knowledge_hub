@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Knowledge Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>Generative AI Knowledge Hub</h1>
+        </header>
+        <div class="main">
+            <nav class="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" data-section="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-section="data-management">Data Management</a></li>
+                    <li><a href="#" data-section="generative-ai-tools">Generative AI Tools</a></li>
+                    <li><a href="#" data-section="search">Search & Retrieval</a></li>
+                    <li><a href="#" data-section="security">Security Settings</a></li>
+                    <li><a href="#" data-section="analytics">Analytics</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <section id="dashboard" class="section active">
+                    <h2>Dashboard</h2>
+                    <div class="card small">
+                        <h3>Data Sources</h3>
+                        <canvas id="dataSourcesBarChart"></canvas>
+                    </div>
+                    <div class="card small">
+                        <h3>Recent Activities</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Action</th>
+                                    <th>Time</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Data uploaded from Japan</td>
+                                    <td>10 mins ago</td>
+                                    <td>Admin</td>
+                                </tr>
+                                <tr>
+                                    <td>Generative AI analysis completed</td>
+                                    <td>30 mins ago</td>
+                                    <td>System</td>
+                                </tr>
+                                <tr>
+                                    <td>Data uploaded from Germany</td>
+                                    <td>1 hour ago</td>
+                                    <td>Admin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="data-management" class="section">
+                    <h2>Data Management</h2>
+                    <button onclick="alert('Upload functionality coming soon!')">Upload Data</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Data Type</th>
+                                <th>Status</th>
+                                <th>Last Updated</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Japan</td>
+                                <td>Orders</td>
+                                <td>Integrated</td>
+                                <td>2024-10-15 14:30</td>
+                            </tr>
+                            <tr>
+                                <td>USA</td>
+                                <td>Products</td>
+                                <td>Pending</td>
+                                <td>2024-10-14 09:00</td>
+                            </tr>
+                            <tr>
+                                <td>Germany</td>
+                                <td>Customers</td>
+                                <td>Integrated</td>
+                                <td>2024-10-13 11:45</td>
+                            </tr>
+                            <tr>
+                                <td>France</td>
+                                <td>Orders</td>
+                                <td>Integrated</td>
+                                <td>2024-10-12 10:00</td>
+                            </tr>
+                            <tr>
+                                <td>UK</td>
+                                <td>Products</td>
+                                <td>Pending</td>
+                                <td>2024-10-11 15:30</td>
+                            </tr>
+                            <tr>
+                                <td>Canada</td>
+                                <td>Customers</td>
+                                <td>Integrated</td>
+                                <td>2024-10-10 08:45</td>
+                            </tr>
+                            <tr>
+                                <td>Australia</td>
+                                <td>Orders</td>
+                                <td>Integrated</td>
+                                <td>2024-10-09 13:00</td>
+                            </tr>
+                            <tr>
+                                <td>Brazil</td>
+                                <td>Products</td>
+                                <td>Pending</td>
+                                <td>2024-10-08 17:15</td>
+                            </tr>
+                            <tr>
+                                <td>India</td>
+                                <td>Customers</td>
+                                <td>Integrated</td>
+                                <td>2024-10-07 12:30</td>
+                            </tr>
+                            <tr>
+                                <td>China</td>
+                                <td>Orders</td>
+                                <td>Integrated</td>
+                                <td>2024-10-06 09:45</td>
+                            </tr>
+                            <tr>
+                                <td>South Korea</td>
+                                <td>Products</td>
+                                <td>Pending</td>
+                                <td>2024-10-05 14:00</td>
+                            </tr>
+                            <tr>
+                                <td>Mexico</td>
+                                <td>Customers</td>
+                                <td>Integrated</td>
+                                <td>2024-10-04 11:15</td>
+                            </tr>
+                            <tr>
+                                <td>Spain</td>
+                                <td>Orders</td>
+                                <td>Integrated</td>
+                                <td>2024-10-03 16:30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="generative-ai-tools" class="section">
+                    <h2>Generative AI Tools</h2>
+                    <div class="tool">
+                        <h3>Code Generator</h3>
+                        <button onclick="alert('Generating code...')">Use Now</button>
+                    </div>
+                    <div class="tool">
+                        <h3>Design Generator</h3>
+                        <button onclick="alert('Generating design...')">Use Now</button>
+                    </div>
+                    <div class="tool">
+                        <h3>Customer Query Resolver</h3>
+                        <button onclick="alert('Resolving query...')">Use Now</button>
+                    </div>
+                    <div class="tool">
+                        <h3>Supply Chain Analyzer</h3>
+                        <button onclick="alert('Analyzing supply chain...')">Use Now</button>
+                    </div>
+                    <div class="tool">
+                        <h3>Document Summarizer</h3>
+                        <button onclick="alert('Summarizing document...')">Use Now</button>
+                    </div>
+                </section>
+                <section id="search" class="section">
+                    <h2>Search & Retrieval</h2>
+                    <input type="text" placeholder="Ask anything..." id="search-input">
+                    <button onclick="alert('Search initiated!')">Search</button>
+                    <div class="upload-image">
+                        <input type="file" accept="image/*" id="image-upload">
+                    </div>
+                </section>
+                <section id="security" class="section">
+                    <h2>Security Settings</h2>
+                    <div class="security-options">
+                        <label><input type="checkbox"> Enable Encryption</label>
+                        <label><input type="checkbox"> Local Processing Only</label>
+                        <label><input type="checkbox"> Two-Factor Authentication</label>
+                        <label><input type="checkbox"> Data Anonymization</label>
+                        <label><input type="checkbox"> Access Logs</label>
+                    </div>
+                </section>
+                <section id="analytics" class="section">
+                    <h2>Analytics</h2>
+                    <div class="chart-container">
+                        <div class="chart-card">
+                            <h3>Generative AI Accuracy Over Time</h3>
+                            <canvas id="accuracyLineChart"></canvas>
+                        </div>
+                        <div class="chart-card">
+                            <h3>Task Completion by Type</h3>
+                            <canvas id="taskBarChart"></canvas>
+                        </div>
+                        <div class="chart-card">
+                            <h3>Data Usage Distribution</h3>
+                            <canvas id="dataUsagePieChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
